@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FEEDBACK-SUVIDHA</title>
+    <link rel="stylesheet" href="/assets/css/feedback-style.css">
+</head>
+<body>
+    <div class="header">
+        <div id="navbar-main">
+            <div class="logo-container">
+                <a href="/veiws/landing.html"><img class="logo" src="/assets/images/logo-modified.png"></a>
+            </div>
+            <div class="nav-buttons">
+                <a href="/veiws/signup.html"><button  class="signupBtn">Sign Up</button></a>
+                <a href="/veiws/login.html"><button  class="loginBtn">Login</button></a>
+            </div>
+        </div>
+    </div>
+    <section class="feedback-content">
+        <div class="feedback-pallete">
+            <form class="feedback-form">
+                <h1>FEEDBACK FORM</h1>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label>Email</label>
+                <input type="email" id="email">
+                <label>Your Feedback</label>
+                <textarea style="resize: none;" rows="10" cols="82" id="description"></textarea>
+                <button type="button" onclick="check()">Send Feedback</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function check(){
+            if(document.getElementById("name").value !=""&&document.getElementById("email").value !=""&&document.getElementById("description").value !=""){
+                alert(" Feedback Sent")
+            }else{
+                alert("empty Fields")
+            }
+        }
+    </script>
+</body>
+</html>

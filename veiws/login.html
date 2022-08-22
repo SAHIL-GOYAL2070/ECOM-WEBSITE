@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN-SUVIDHA</title>
+    <link rel="stylesheet" href="/assets/css/login-style.css">
+</head>
+<body>
+    <div class="header">
+        <div id="navbar-main">
+            <div class="logo-container">
+                <a href="/veiws/landing.html"><img class="logo" src="/assets/images/logo-modified.png"></a>
+            </div>
+            <div class="nav-buttons">
+                <a href="/veiws/signup.html"><button  class="signupBtn">Sign Up</button></a>
+                <a href="/veiws/login.html"><button  class="loginBtn">Login</button></a>
+            </div>
+        </div>
+    </div>
+    <section class="login-content">
+        <div class="login-pallete">
+            <form class="login-form">
+                <h1>LOGIN FORM</h1>
+                <label>Email Id</label>
+                <input type="email" id="email">
+                <label>Password</label>
+                <input type="password" id="password">
+                <button type="button" id="login" onclick="check()">Log In</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        function check(){
+            if(document.getElementById("email").value !=""&&document.getElementById("password").value !=""){
+                alert("Successful Login")
+            }else{
+                alert("empty Fields")
+            }
+            if(document.getElementById("email").value !=""){
+                alert("email cannot be empty")
+            }else if(document.getElementById("password").value !=""){
+                alert("password cannot be empty");
+            }
+        }
+    </script>
+</body>
+</html>

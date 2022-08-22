@@ -1,0 +1,37 @@
+:root{
+    --background:#0018c7;
+    --text:#fff;
+    --background-light:#287ff0;
+}
+#header{
+ display: block;
+}
+.banner{
+    display: block;
+    background-color: var(--background);
+}
+ul{
+    margin:0px;
+}
+.banner .logo{
+    display: block;
+
+}
+.user-options{
+    display: block;
+}
+.signup{
+    display: block;
+}
+.login{
+    display: inline;
+}
+.navbar{
+    background-color: var(--background-light);
+}
+#main{
+
+}
+#footer{
+
+}
